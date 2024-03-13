@@ -3,10 +3,10 @@ source('CenterOutwardRegression.R')
 
 set.seed(532342)
 
-n.R<-60
-n.S<-60
+n.R<-40
+n.S<-40
 nn<-n.R*n.S
-n_sample<-100000
+n_sample<-50000
 
 rmixture<-function(a){
   aux<-runif(1)
@@ -41,5 +41,18 @@ x_tick <- seq(xmin+0.5*(xmax-xmin)/grid,xmax-0.5*(xmax-xmin)/grid,by=(xmax-xmin)
 
 fit<-QuantileRegressionOT(x,y,z,n.R,n.S,x_tick,ContLength=180)
 
+rotMat<-matrix(rbind(c(0.74,0.67,0.02,0),
+                     c(-0.08,0.108,0.99,0),
+                     c(0.67,-0.731,0.131,0),
+                     c(0,0,0,1)))
+
+plotQuantileRegressionOT3D(fit,contours=TRUE,rays=FALSE)
+par3d(windowRect=c(100,100,700,700))
+view3d(userMatrix = rotMat)
+aspect3d(1,1,1)
+
+
+
+movie3d( spin3d(rpm=3), duration=20,dir='/home/tasio/temp', clean=FALSE )
 
 
