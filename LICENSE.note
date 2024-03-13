@@ -1,9 +1,9 @@
  (personal details removed for peer review)
  
-    Code generated to fit the models and replicate the reproduce the results in the paper:
-    "Improving Model Choice in Classification: An Approach Based on Clustering of Covariance Matrices"
+    Code generated to fit the models reproduce the results in the paper:
+    "Nonparametric Multiple-Output Center-Outward Quantile Regression"
 
-        Copyright (C) 2023 , _______________________.
+        Copyright (C) 2024 , _______________________.
 
         This program is free software: you can redistribute it and/or modify
         it under the terms of the GNU General Public License as published by
