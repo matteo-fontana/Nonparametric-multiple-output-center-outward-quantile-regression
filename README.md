@@ -1,4 +1,4 @@
-# VQR
+# monpCOqr
 
 ***Nonparametric multiple-output center-outward quantile regression***
 
