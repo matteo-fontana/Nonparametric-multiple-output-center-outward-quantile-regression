@@ -1,4 +1,4 @@
-## QuantileRegressionOT(x, y, z, nR, nS, grid,ContLength)
+## QuantileRegressionOT(x, y, z, nR, nS, x_tick,ContLength)
 ## main function for computing center-outward regression
 ## x,y,z column vectors; (y,z) output variables, x regressor
 ## nR, nS control the number of nearest neighbors (k = nR x nS)
