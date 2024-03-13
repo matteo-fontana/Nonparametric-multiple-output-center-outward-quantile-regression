@@ -12,6 +12,6 @@ The code is included for the sake of reproducibility and should be considered as
 
 ### Contents
 
-The main method for multiple-output center-outward quantile regression based on $k$-nearest neighbor weights is implemented. We provide R and Python code. Most of the figures in the main manuscript have been produced with the R code. The files with a name starting with 'Clover_shaped_model' correspond to model (1.8), 
+The main method for multiple-output center-outward quantile regression based on $k$-nearest neighbor weights is implemented. We provide R and Python code. Most of the figures in the main manuscript have been produced with the R code.
 
 
