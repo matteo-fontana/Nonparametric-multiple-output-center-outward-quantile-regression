@@ -53,6 +53,6 @@ aspect3d(1,1,1)
 
 
 
-movie3d( spin3d(rpm=3), duration=20,dir='/home/tasio/temp', clean=FALSE )
+movie3d(spin3d(rpm=3), duration=20, clean=FALSE)
 
 
