@@ -1,4 +1,4 @@
-#source('CenterOutwardRegression.R')
+source('CenterOutwardRegression.R')
 
 
 set.seed(532342)
