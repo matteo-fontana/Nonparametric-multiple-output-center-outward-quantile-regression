@@ -1,6 +1,6 @@
-source('CenterOutwardRegression.R')
+source('R/CenterOutwardRegression.R')
 
-set.seed(532342)
+set.seed(1991)
 
 n.R<-35
 n.S<-35
@@ -25,11 +25,11 @@ rotMat<-matrix(rbind(c(0.74,0.67,0.02,0),
                      c(0.67,-0.731,0.131,0),
                      c(0,0,0,1)))
 
-plotQuantileRegressionOT3D(fit1,contours=TRUE,rays=FALSE)
+plotQuantileRegressionOT3D(fit,contours=TRUE,rays=FALSE)
 par3d(windowRect=c(100,100,700,700))
 view3d(userMatrix = rotMat)
 aspect3d(1,1,1)
 
 
 
-movie3d( spin3d(rpm=3), duration=20,dir='/home/tasio/temp', clean=FALSE )
+movie3d( spin3d(rpm=3), duration=20,dir='/videos/', clean=FALSE )
