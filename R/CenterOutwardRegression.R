@@ -20,7 +20,7 @@ QuantileRegressionOT<-function(x, y, z, nR, nS, x_tick,ContLength){
   U.grid<-NULL
   for (i in 1:n.R) U.grid<-rbind(U.grid,i/(n.R+1)*disc.sphere)
   ## x mesh
-  quantiles<-foreach (u=1:grid) %dopar%{
+  quantiles<-foreach (u=1:grid, .packages = 'transport') %dopar%{
     ### select n-nearest neighbors
     ord = sort(abs(x - x_tick[u]),index.return=TRUE)$ix[1:n]
     X = x[ord]
